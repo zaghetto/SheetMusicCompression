@@ -4,22 +4,10 @@ function [Coefs, diff] = rdcurvediff(method, bitrates1, PSNRs1, bitrates2, PSNRs
 %   method = 0: Average PSNR difference;
 %   method = 1; Average bitrate difference;
 %
-% Segundo:
+% 	According to:
 %
 %   [1] G. Bjontegaard,  “Calculation of average PSNR differences between RD-curves”, 
 %   presented at the 13th VCEG-M33 Meeting, Austin, TX, Apr. 2001.
-%
-% O cálculo é realizado utilizando uma versão modificada do programa 
-% avsnr.c, desenvolvido por:
-%
-%  Telenor Broadband Services 
-%  Keysers gate 13                        
-%  N-0130 Oslo
-%  Norway                  
-%
-% A interpolação utilizada na geração dos gráfico é:
-%
-%  PCHIP  Piecewise Cubic Hermite Interpolating Polynomial.
 
 if nargin ~=11 
     error('Número de argumentos deve ser igual a 11.')
