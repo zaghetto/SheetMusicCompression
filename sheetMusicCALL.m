@@ -53,9 +53,9 @@ end
 PSNR_MODE = 0;  % 0 - Global, 1 - Average
 
 % Encoding parameters
-QPI = 10;
+QPI = 1;
 QPF = 50;
-QPStep = 10;
+QPStep = 12;
 SearchRange = 64;
 
 % Length of quantization paremeters vector
