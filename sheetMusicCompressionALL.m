@@ -58,6 +58,7 @@ rmdir([currDir '\MAT'], 's')
 
 cd FINALRESULT;
 
+% Plot results
 plot_result;
 
 cd ..
