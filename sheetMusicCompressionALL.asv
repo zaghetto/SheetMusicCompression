@@ -27,41 +27,25 @@ end
 toc
 
 
-% Results folder
-resdir = 'FINALRESULT';
+% Plot results
+d = char(datetime('now','Format','y_M_d_HH_mm_ss'));
+resdir = 'FINALRESULT'
 
 % Current folder
 currDir = pwd;
 
-% Create results 
-if ~(exist(resdir, 'dir') == 7)
+if ~(exist(MAT, 'dir') == 7)
     mkdir(resdir);
 else
     delete([currDir '\' resdir '\*.mat'])
 end
 
-% Copy configuration files to results folder
-copyfile([currDir '\*.cfg'],[currDir '\' resdir '\'])
 
-% Move most recent file
+
 dirMAT = dir('MAT')
-for i = 3:length(dirMAT)        
-    dirRes = dir([currDir '\MAT\' dirMAT(i).name '\*.mat']);
-    if length(dirRes) == 5
-        movefile([currDir '\MAT\' dirMAT(i).name '\' dirRes(5).name], [currDir '\' resdir '\' dirRes(5).name]);
-    else
-        break
-    end
+for i = 3:length(dirMAT)
+    dirMAT(i).name
 end
-
-rmdir([currDir '\MAT'], 's')
-
-cd FINALRESULT;
-
-plot_result;
-
-cd ..
-
 
 
 

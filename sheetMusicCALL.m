@@ -29,15 +29,15 @@ F = imread([PATHNAME '\' FILENAME num2str(i) '.bmp']);
 OrigSize = N*RESDIR(1).bytes;
  
 % Set econders on or off
-jpeg2000  = 0;
+jpeg2000  = 1;
 
-h264intra = 0;
+h264intra = 1;
 
 h264video = 1;
 
-hevcintra = 0;
+hevcintra = 1;
 
-hevcvideo = 0;
+hevcvideo = 1;
 
 % Turn h264video on if hevcvideo if on. Both will use the same YUV file.
 if hevcvideo
