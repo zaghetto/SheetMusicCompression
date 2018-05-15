@@ -19,7 +19,7 @@ docs = dir(PATHNAME);
 
 % Select music subfolder
 tic
-for i = 1:length(docs)    
+for i = 3:length(docs)    
     disp(docs(i).name)    
     PATHMUSIC = [PATHNAME '\' docs(i).name];
     sheetMusicCALL(PATHMUSIC)   

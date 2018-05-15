@@ -17,7 +17,9 @@ http://kakadusoftware.com/
 https://www.ffmpeg.org/
 
 5) avsnr.exe <br>
-Telenor Broadband Services <br>
-Keysers gate 13 <br>                       
+Telenor Broadband Services<br>
+Keysers gate 13<br>                       
 N-0130 Oslo<br>
-Norway                  
+Norway <br>               
+
+Requires ZaghLib. Run add_zaghlib.m (https://github.com/zaghetto/ZaghLib) and select ZaghLib folder.
